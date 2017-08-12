@@ -1,0 +1,9 @@
+c:\users\deric\documents\visual studio 2017\Projects\MyComics\MyComics\bin\Debug\netcoreapp1.1\MyComics.deps.json
+c:\users\deric\documents\visual studio 2017\Projects\MyComics\MyComics\bin\Debug\netcoreapp1.1\MyComics.runtimeconfig.json
+c:\users\deric\documents\visual studio 2017\Projects\MyComics\MyComics\bin\Debug\netcoreapp1.1\MyComics.runtimeconfig.dev.json
+c:\users\deric\documents\visual studio 2017\Projects\MyComics\MyComics\bin\Debug\netcoreapp1.1\MyComics.dll
+c:\users\deric\documents\visual studio 2017\Projects\MyComics\MyComics\bin\Debug\netcoreapp1.1\MyComics.pdb
+c:\users\deric\documents\visual studio 2017\Projects\MyComics\MyComics\obj\Debug\netcoreapp1.1\MyComics.csprojResolveAssemblyReference.cache
+c:\users\deric\documents\visual studio 2017\Projects\MyComics\MyComics\obj\Debug\netcoreapp1.1\MyComics.AssemblyInfo.cs
+c:\users\deric\documents\visual studio 2017\Projects\MyComics\MyComics\obj\Debug\netcoreapp1.1\MyComics.dll
+c:\users\deric\documents\visual studio 2017\Projects\MyComics\MyComics\obj\Debug\netcoreapp1.1\MyComics.pdb
