@@ -35,3 +35,19 @@ textarea {
         display: none;
     }
 }
+
+#hideComics {
+    display: block;
+    transition: height ease 2s;
+}
+
+#comicListWrapper {
+    height: 100px;
+    transition: height ease .25s;
+}
+
+#comicListWrapper.hide {
+    height: 0;
+    transition: height ease .25s;
+    overflow: hidden;
+}

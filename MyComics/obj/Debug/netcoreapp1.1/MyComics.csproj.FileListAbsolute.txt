@@ -7,3 +7,4 @@ c:\users\deric\documents\visual studio 2017\Projects\MyComics\MyComics\obj\Debug
 c:\users\deric\documents\visual studio 2017\Projects\MyComics\MyComics\obj\Debug\netcoreapp1.1\MyComics.AssemblyInfo.cs
 c:\users\deric\documents\visual studio 2017\Projects\MyComics\MyComics\obj\Debug\netcoreapp1.1\MyComics.dll
 c:\users\deric\documents\visual studio 2017\Projects\MyComics\MyComics\obj\Debug\netcoreapp1.1\MyComics.pdb
+C:\Users\deric\documents\visual studio 2017\Projects\MyComics\MyComics\obj\Debug\netcoreapp1.1\MyComics.csproj.CoreCompileInputs.cache
