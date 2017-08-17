@@ -1,9 +1,40 @@
-﻿@{
+﻿@model MyComics.ViewModels.ContactViewModel
+
+@{
     ViewData["Title"] = "Contact";
 }
+
+@section ScriptsDev {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
+
 <h2>@ViewData["Title"].</h2>
 <h3>@ViewData["Message"]</h3>
 
+<form method="post">
+    @if (ViewBag.Confirmation != null)
+    {
+        <div>
+            <p>@ViewBag.Confirmation</p>
+        </div>
+    }
+    <label asp-for="Name">Name</label>
+    <input asp-for="Name" type="text" />
+    <span asp-validation-for="Name"></span>
+    <label asp-for="Email">Email</label>
+    <input asp-for="Email" type="email" />
+    <span asp-validation-for="Email"></span>
+    <label asp-for="Subject">Subject</label>
+    <input asp-for="Subject"type="text" />
+    <span asp-validation-for="Subject"></span>
+    <label asp-for="Message">Message</label>
+    <textarea asp-for="Message" cols="30" rows="5"></textarea>
+    <span asp-validation-for="Message"></span>
+    <div>
+        <input type="submit" value="Send Message" />
+    </div>
+</form>
 <address>
     One Microsoft Way<br />
     Redmond, WA 98052-6399<br />

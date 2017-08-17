@@ -17,6 +17,9 @@ textarea {
     max-width: 280px;
 }
 
+label {
+    display:block;
+}
 /* Carousel */
 .carousel-caption p {
     font-size: 20px;
