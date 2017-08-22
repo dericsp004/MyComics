@@ -2,9 +2,12 @@
 (function () {
     var comicListWrapper = $("#comicListWrapper");
     $("#hideComicsButton").on("click", function () {
-        comicListWrapper.toggleClass("hide");
-        if (comicListWrapper.hasClass("hide")) {
+        comicListWrapper.toggleClass("hideComics");
+        if (comicListWrapper.hasClass("hideComics")) {
             $(this).text("Show Comics")
+        }
+        else {
+            $(this).text("Hide Comics")
         }
     });
 

@@ -39,18 +39,19 @@ label {
     }
 }
 
-#hideComics {
+/*#hideComics {
     display: block;
     transition: height ease 2s;
-}
+}*/
 
 #comicListWrapper {
     height: 100px;
-    transition: height ease .25s;
+    transition: height ease .5s;
+    overflow: hidden;
 }
 
-#comicListWrapper.hide {
+#comicListWrapper.hideComics {
     height: 0;
-    transition: height ease .25s;
+    transition: height ease .5s;
     overflow: hidden;
 }
