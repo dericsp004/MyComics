@@ -12,37 +12,53 @@
 <h2>@ViewData["Title"].</h2>
 <h3>@ViewData["Message"]</h3>
 
-<form method="post">
-    @if (ViewBag.Confirmation != null)
-    {
-        <div>
-            <p>@ViewBag.Confirmation</p>
-        </div>
-    }
-    <label asp-for="Name">Name</label>
-    <input asp-for="Name" type="text" />
-    <span asp-validation-for="Name"></span>
-    <label asp-for="Email">Email</label>
-    <input asp-for="Email" type="email" />
-    <span asp-validation-for="Email"></span>
-    <label asp-for="Subject">Subject</label>
-    <input asp-for="Subject"type="text" />
-    <span asp-validation-for="Subject"></span>
-    <label asp-for="Message">Message</label>
-    <textarea asp-for="Message" cols="30" rows="5"></textarea>
-    <span asp-validation-for="Message"></span>
-    <div>
-        <input type="submit" value="Send Message" />
+<div class="row">
+    <div class="col-md-5">
+        <form method="post">
+            @if (ViewBag.Confirmation != null)
+            {
+                <div>
+                    <p class="text-success">@ViewBag.Confirmation</p>
+                </div>
+            }
+            <div class="form-group">
+                <label asp-for="Name">Name</label>
+                <input class="form-control" asp-for="Name" type="text" />
+                <span asp-validation-for="Name" class="text-warning"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email">Email</label>
+                <input class="form-control" asp-for="Email" type="email" />
+                <span asp-validation-for="Email" class="text-warning"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Subject">Subject</label>
+                <input class="form-control" asp-for="Subject" type="text" />
+                <span asp-validation-for="Subject" class="text-warning"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Message">Message</label>
+                <textarea class="form-control" asp-for="Message" cols="30" rows="5"></textarea>
+                <span asp-validation-for="Message" class="text-warning"></span>
+            </div>
+            <div class="form-group">
+                <a asp-controller="Home" asp-action="Index" class="btn btn-default">Cancel</a>
+                <input type="submit" class="btn btn-success" value="Send Message" />
+            </div>
+        </form>
     </div>
-</form>
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
 
-<address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+    <div class="col-md-6 col-md-offset-1">
+        <address>
+            One Microsoft Way<br />
+            Redmond, WA 98052-6399<br />
+            <abbr title="Phone">P:</abbr>
+            425.555.0100
+        </address>
+
+        <address>
+            <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
+            <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+        </address>
+    </div>
+</div>

@@ -6522,11 +6522,9 @@ button.close {
 .pull-left {
   float: left !important;
 }
-
-/*
 .hide {
   display: none !important;
-}*/
+}
 .show {
   display: block !important;
 }
@@ -6540,7 +6538,6 @@ button.close {
   background-color: transparent;
   border: 0;
 }
-
 .hidden {
   display: none !important;
 }
