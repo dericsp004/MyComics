@@ -55,3 +55,11 @@ label {
     transition: height ease .5s;
     overflow: hidden;
 }
+
+#hideComicsButton {
+    text-decoration:none;
+} 
+
+.inline {
+    display: inline;
+}
