@@ -8,9 +8,10 @@ using MyComics.Models;
 namespace MyComics.Migrations
 {
     [DbContext(typeof(ComicsContext))]
-    partial class ComicsContextModelSnapshot : ModelSnapshot
+    [Migration("20170824194455_AlteredMarvelSeriesModel")]
+    partial class AlteredMarvelSeriesModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2")

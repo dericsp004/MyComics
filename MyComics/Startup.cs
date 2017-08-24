@@ -43,11 +43,15 @@ namespace MyComics
                 //Implement real Mail Service
             }
             services.AddDbContext<ComicsContext>();
+            services.AddTransient<MyComicsSeeder>();
             services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, 
+            IHostingEnvironment env, 
+            ILoggerFactory loggerFactory,
+            MyComicsSeeder seeder)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
@@ -70,6 +74,8 @@ namespace MyComics
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            seeder.EnsureSeedData().Wait();
         }
     }
 }

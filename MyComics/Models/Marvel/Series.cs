@@ -8,6 +8,7 @@ namespace MyComics.Models.Marvel
     public class Series
     {
         public int Id { get; set; }
+        public int SeriesNo { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public string ResourceURI { get; set; }
@@ -23,7 +24,7 @@ namespace MyComics.Models.Marvel
         public Stories Stories { get; set; }
         public Comics Comics { get; set; }
         public Events Events { get; set; }
-        public Summary next { get; set; }
-        public Summary previous { get; set; }
+        public Summary Next { get; set; }
+        public Summary Previous { get; set; }
     }
 }

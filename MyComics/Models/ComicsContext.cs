@@ -18,7 +18,7 @@ namespace MyComics.Models
         }
 
         public DbSet<Series> Series { get; set; }
-        public DbSet<Creators> Comics { get; set; }
+        public DbSet<Comics> Comics { get; set; }
         public DbSet<Events> Events { get; set; }
         public DbSet<Stories> Stories { get; set; }
         public DbSet<Characters> Characters { get; set; }

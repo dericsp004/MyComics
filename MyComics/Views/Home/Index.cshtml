@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<MyComics.Models.Marvel.Series>
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -7,8 +8,11 @@
     <a href="#" id="hideComicsButton" class="inline"><i class="fa fa-angle-up fa-lg"></i></a>
     <div id="comicListWrapper">
         <ul id="favComicsList">
-            <li>Moon Knight</li>
-            <li>X-Men Blue</li>
+            @foreach (var item in Model)
+            {
+                <li>@item.Title</li>
+            }
+            
         </ul>
     </div>
 </div>
