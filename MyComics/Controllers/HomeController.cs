@@ -25,8 +25,8 @@ namespace MyComics.Controllers
 
         public IActionResult Index()
         {
-            context.Fakers.ToList();
-            return View();
+            var data = context.Series.ToList();
+            return View(data);
         }
 
         public IActionResult About()
