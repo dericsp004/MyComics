@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using MyComics.Services;
+using MyComics.Models;
 
 namespace MyComics
 {
@@ -41,6 +42,7 @@ namespace MyComics
             {
                 //Implement real Mail Service
             }
+            services.AddDbContext<ComicsContext>();
             services.AddMvc();
         }
 

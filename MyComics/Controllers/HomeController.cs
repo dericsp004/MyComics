@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using MyComics.ViewModels;
 using MyComics.Services;
 using Microsoft.Extensions.Configuration;
+using MyComics.Models;
 
 namespace MyComics.Controllers
 {
@@ -13,15 +14,18 @@ namespace MyComics.Controllers
     {
         private IMailService mailService;
         private IConfigurationRoot appSettings;
+        private ComicsContext context;
 
-        public HomeController(IMailService mailService, IConfigurationRoot appSettings)
+        public HomeController(IMailService mailService, IConfigurationRoot appSettings, ComicsContext context)
         {
             this.mailService = mailService;
             this.appSettings = appSettings;
+            this.context = context;
         }
 
         public IActionResult Index()
         {
+            context.Fakers.ToList();
             return View();
         }
 
